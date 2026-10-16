@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="language" content="English">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="title" content="DAWN++: Sunlight-Robust Quadruped Parkour via Adaptive Depth-Corruption Training of World Models">
+  <meta name="description" content="A structured depth-corruption training framework for sunlight-robust quadruped parkour directly from raw depth.">
+  <meta name="keywords" content="quadruped parkour, depth perception, sunlight, world models, reinforcement learning">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="DAWN++: Sunlight-Robust Quadruped Parkour via Adaptive Depth-Corruption Training of World Models">
+  <meta property="og:description" content="Adaptive depth-corruption training and a recurrent world model for parkour from raw depth under sunlight.">
+  <meta property="og:url" content="https://dawnpp-parkour.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="DAWN++: Sunlight-Robust Quadruped Parkour via Adaptive Depth-Corruption Training of World Models">
+  <meta name="twitter:description" content="Adaptive depth-corruption training for sunlight-robust quadruped parkour from raw depth.">
+  <meta name="citation_title" content="DAWN++: Sunlight-Robust Quadruped Parkour via Adaptive Depth-Corruption Training of World Models">
+
+  <title>DAWN++: Sunlight-Robust Quadruped Parkour via Adaptive Depth-Corruption Training of World Models</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/dawnpp.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Material+Icons&amp;display=swap" rel="stylesheet">
+  <script defer src="js/dawnpp.js"></script>
+</head>
+<body>
+  <button class="scroll-to-top" type="button" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">DAWN++: Sunlight-Robust Quadruped Parkour via Adaptive Depth-Corruption Training of World Models</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Anonymous Author(s)</span>
+              </div>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="pdf/dawnpp-paper.pdf" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fas fa-file-pdf" aria-hidden="true"></i></span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <button class="external-link button is-normal is-rounded is-dark is-coming-soon" type="button">
+                      <span class="icon"><i class="ai ai-arxiv" aria-hidden="true"></i></span>
+                      <span>arXiv (Coming soon)</span>
+                    </button>
+                  </span>
+                  <span class="link-block">
+                    <button class="external-link button is-normal is-rounded is-dark is-coming-soon" type="button">
+                      <span class="icon"><i class="fab fa-github" aria-hidden="true"></i></span>
+                      <span>Code (Coming soon)</span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="section section-preview" aria-label="Project preview"><div class="container is-max-desktop"><div class="columns is-centered preview-videos"><div class="column"><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Outdoor sunlight, corrupted depth and real-world parkour"><source src="videos/dawnpp-teaser.mp4" type="video/mp4"></video></div></div>
+<p class="catchphrase has-text-centered">From direct sunlight to nighttime.</p><p class="project-tagline has-text-centered">Zero-shot parkour from raw depth with a denoising world model.</p></div></section>
+<section class="section hero is-light" id="lighting"><div class="container is-max-desktop"><h2 class="title is-3 has-text-centered">One Policy Across Lighting Conditions</h2><p class="has-text-centered subtitle is-5 section-description">A corruption-trained world model supports one policy across lighting conditions, with fixed camera settings and no depth filtering.</p><div class="media-grid media-grid-2"><div class="video-card"><div class="card-label"><i class="fas fa-sun" aria-hidden="true"></i> Strong Sunlight 1</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720" aria-label="Strong Sunlight 1 outdoors"><source src="videos/lighting-strong-sunlight-1.mp4" type="video/mp4"></video></div><div class="video-card"><div class="card-label"><i class="fas fa-sun" aria-hidden="true"></i> Strong Sunlight 2</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720" aria-label="Strong Sunlight 2 outdoors"><source src="videos/lighting-strong-sunlight-2.mp4" type="video/mp4"></video></div><div class="video-card"><div class="card-label"><span class="material-icons" style="font-size:1.4em;vertical-align:-0.15em;" aria-hidden="true">wb_shade</span> Shaded</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720" aria-label="Shaded outdoors"><source src="videos/lighting-shaded.mp4" type="video/mp4"></video></div><div class="video-card"><div class="card-label"><i class="fas fa-moon" aria-hidden="true"></i> Nighttime</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720" aria-label="Nighttime outdoors"><source src="videos/lighting-nighttime.mp4" type="video/mp4"></video></div></div></div></section>
+<section class="section" id="outdoor"><div class="container is-max-desktop"><h2 class="title is-3 has-text-centered">Outdoor Parkour Under Strong Sunlight</h2><p class="has-text-centered subtitle is-5 section-description">A single policy uses the world model&#x27;s terrain representation for stable traversal across varied outdoor obstacles, without switching controllers between terrain types.</p><div class="media-grid media-grid-2"><div class="terrain-panel"><h3 class="card-label">Step</h3><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="720" aria-label="Step traversals outdoors"><source src="videos/outdoor-step.mp4" type="video/mp4"></video></div></div><div class="terrain-panel"><h3 class="card-label">Gap</h3><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="720" aria-label="Gap traversals outdoors"><source src="videos/outdoor-gap.mp4" type="video/mp4"></video></div></div><div class="terrain-panel"><h3 class="card-label">Stairs</h3><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="720" aria-label="Stairs outdoors"><source src="videos/outdoor-stairs.mp4" type="video/mp4"></video></div></div><div class="terrain-panel"><h3 class="card-label">Slope</h3><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="720" aria-label="Slope outdoors"><source src="videos/outdoor-slope.mp4" type="video/mp4"></video></div></div></div></div></section>
+<section class="section hero is-light" id="baselines"><div class="container is-max-desktop"><h2 class="title is-3 has-text-centered">Baselines Under Strong Sunlight</h2><p class="has-text-centered subtitle is-5 section-description">Sunlight can erase obstacle boundaries and landing surfaces from the depth input.</p><div class="media-grid media-grid-3"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Baseline trial 1"><source src="videos/baseline-failure-1.mp4" type="video/mp4"></video></div><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Baseline trial 2"><source src="videos/baseline-failure-2.mp4" type="video/mp4"></video></div><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Baseline trial 3"><source src="videos/baseline-failure-3.mp4" type="video/mp4"></video></div></div></div></section>
+<section class="section hero is-light" id="depth-corruptions"><div class="container is-max-desktop"><h2 class="title is-3 has-text-centered">Structured Depth Corruption</h2><p class="has-text-centered subtitle is-5 section-description">Corruption settings persist throughout each rollout. Traversal performance and sampled severity guide subsequent sampling ranges.</p><div class="sim-carousel" data-carousel="corruptions"><div class="sim-carousel-track"><div class="sim-carousel-slider"><div class="sim-carousel-slide"><div class="video-card"><div class="card-label">Strength 1.0</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Clean depth and seven cumulative corruption stages at strength 1.0"><source src="videos/depth-corruption-strength-1.0.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><div class="card-label">Strength 0.9</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Clean depth and seven cumulative corruption stages at strength 0.9"><source src="videos/depth-corruption-strength-0.9.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><div class="card-label">Strength 0.8</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Clean depth and seven cumulative corruption stages at strength 0.8"><source src="videos/depth-corruption-strength-0.8.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><div class="card-label">Strength 0.7</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Clean depth and seven cumulative corruption stages at strength 0.7"><source src="videos/depth-corruption-strength-0.7.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><div class="card-label">Strength 0.6</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Clean depth and seven cumulative corruption stages at strength 0.6"><source src="videos/depth-corruption-strength-0.6.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><div class="card-label">Strength 0.5</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Clean depth and seven cumulative corruption stages at strength 0.5"><source src="videos/depth-corruption-strength-0.5.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><div class="card-label">Strength 0.4</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Clean depth and seven cumulative corruption stages at strength 0.4"><source src="videos/depth-corruption-strength-0.4.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><div class="card-label">Strength 0.3</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Clean depth and seven cumulative corruption stages at strength 0.3"><source src="videos/depth-corruption-strength-0.3.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><div class="card-label">Strength 0.2</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Clean depth and seven cumulative corruption stages at strength 0.2"><source src="videos/depth-corruption-strength-0.2.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><div class="card-label">Strength 0.1</div><video class="review-media" muted playsinline loop preload="none" width="1280" height="720"
+          aria-label="Clean depth and seven cumulative corruption stages at strength 0.1"><source src="videos/depth-corruption-strength-0.1.mp4" type="video/mp4"></video></div></div></div></div>
+ <div class="sim-carousel-controls"><button type="button" class="sim-carousel-btn" data-carousel-nav="-1" aria-label="Previous video"><i class="fas fa-chevron-left" aria-hidden="true"></i></button><div class="sim-carousel-dots"><button type="button" class="sim-dot active" data-carousel-index="0" aria-label="Strength 1.0" aria-current="true"></button><button type="button" class="sim-dot" data-carousel-index="1" aria-label="Strength 0.9"></button><button type="button" class="sim-dot" data-carousel-index="2" aria-label="Strength 0.8"></button><button type="button" class="sim-dot" data-carousel-index="3" aria-label="Strength 0.7"></button><button type="button" class="sim-dot" data-carousel-index="4" aria-label="Strength 0.6"></button><button type="button" class="sim-dot" data-carousel-index="5" aria-label="Strength 0.5"></button><button type="button" class="sim-dot" data-carousel-index="6" aria-label="Strength 0.4"></button><button type="button" class="sim-dot" data-carousel-index="7" aria-label="Strength 0.3"></button><button type="button" class="sim-dot" data-carousel-index="8" aria-label="Strength 0.2"></button><button type="button" class="sim-dot" data-carousel-index="9" aria-label="Strength 0.1"></button></div><button type="button" class="sim-carousel-btn" data-carousel-nav="1" aria-label="Next video"><i class="fas fa-chevron-right" aria-hidden="true"></i></button></div></div></div></section>
+<section class="section" id="simulation"><div class="container is-max-desktop"><h2 class="title is-3 has-text-centered">Simulation Parkour and Depth Reconstruction</h2><p class="has-text-centered subtitle is-5 section-description">Clean-depth supervision trains the world model to reconstruct terrain. Obstacle boundaries and landing surfaces remain recognizable despite missing input depth.</p><div class="terrain-panel"><div class="sim-carousel" data-carousel="simulation-terrains"><div class="sim-carousel-track"><div class="sim-carousel-slider"><div class="sim-carousel-slide"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="716" aria-label="Simulation parkour with Input Depth, Reconstruction and Clean Depth"><source src="videos/simulation-step-side.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="716" aria-label="Simulation parkour with Input Depth, Reconstruction and Clean Depth"><source src="videos/simulation-step-rear-right.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="716" aria-label="Simulation parkour with Input Depth, Reconstruction and Clean Depth"><source src="videos/simulation-step-rear.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="716" aria-label="Simulation parkour with Input Depth, Reconstruction and Clean Depth"><source src="videos/simulation-gap-side.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="716" aria-label="Simulation parkour with Input Depth, Reconstruction and Clean Depth"><source src="videos/simulation-gap-rear-right.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="716" aria-label="Simulation parkour with Input Depth, Reconstruction and Clean Depth"><source src="videos/simulation-gap-rear.mp4" type="video/mp4"></video></div></div></div></div><div class="sim-carousel-controls"><button type="button" class="sim-carousel-btn" data-carousel-nav="-1" aria-label="Previous Simulation parkour video"><i class="fas fa-chevron-left" aria-hidden="true"></i></button><div class="sim-carousel-dots"><button type="button" class="sim-dot active" data-carousel-index="0" aria-label="Simulation parkour video 1" aria-current="true"></button><button type="button" class="sim-dot" data-carousel-index="1" aria-label="Simulation parkour video 2"></button><button type="button" class="sim-dot" data-carousel-index="2" aria-label="Simulation parkour video 3"></button><button type="button" class="sim-dot" data-carousel-index="3" aria-label="Simulation parkour video 4"></button><button type="button" class="sim-dot" data-carousel-index="4" aria-label="Simulation parkour video 5"></button><button type="button" class="sim-dot" data-carousel-index="5" aria-label="Simulation parkour video 6"></button></div><button type="button" class="sim-carousel-btn" data-carousel-nav="1" aria-label="Next Simulation parkour video"><i class="fas fa-chevron-right" aria-hidden="true"></i></button></div></div></div></div></section>
+<section class="section hero is-light" id="real-world"><div class="container is-max-desktop"><h2 class="title is-3 has-text-centered">Real-World Parkour and Depth Reconstruction</h2><p class="has-text-centered subtitle is-5 section-description">The recurrent world model carries terrain information across frames. Corruption training adds no inference-time modules.</p><div class="terrain-panel"><div class="sim-carousel" data-carousel="real-world-sun"><div class="sim-carousel-track"><div class="sim-carousel-slider"><div class="sim-carousel-slide"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="640" aria-label="Sunlight traversal, front view with Input Depth and Reconstruction"><source src="videos/real-sunlight-front.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="640" aria-label="Run 2, camera angle 1 with Input Depth and Reconstruction"><source src="videos/real-course-2-front.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="640" aria-label="Run 2, camera angle 2 with Input Depth and Reconstruction"><source src="videos/real-course-2-oblique.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="640" aria-label="Run 1, camera angle 1 with Input Depth and Reconstruction"><source src="videos/real-course-1-front.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="640" aria-label="Run 1, camera angle 2 with Input Depth and Reconstruction"><source src="videos/real-course-1-oblique.mp4" type="video/mp4"></video></div></div><div class="sim-carousel-slide" inert aria-hidden="true"><div class="video-card"><video class="review-media" muted playsinline loop preload="none" width="1280" height="640" aria-label="Sunlight traversal, side view 2 with Input Depth and Reconstruction"><source src="videos/real-sunlight-side-2.mp4" type="video/mp4"></video></div></div></div></div><div class="sim-carousel-controls"><button type="button" class="sim-carousel-btn" data-carousel-nav="-1" aria-label="Previous Sunlight traversal video"><i class="fas fa-chevron-left" aria-hidden="true"></i></button><div class="sim-carousel-dots"><button type="button" class="sim-dot active" data-carousel-index="0" aria-label="Sunlight traversal video 1" aria-current="true"></button><button type="button" class="sim-dot" data-carousel-index="1" aria-label="Sunlight traversal video 2"></button><button type="button" class="sim-dot" data-carousel-index="2" aria-label="Sunlight traversal video 3"></button><button type="button" class="sim-dot" data-carousel-index="3" aria-label="Sunlight traversal video 4"></button><button type="button" class="sim-dot" data-carousel-index="4" aria-label="Sunlight traversal video 5"></button><button type="button" class="sim-dot" data-carousel-index="5" aria-label="Sunlight traversal video 6"></button></div><button type="button" class="sim-carousel-btn" data-carousel-nav="1" aria-label="Next Sunlight traversal video"><i class="fas fa-chevron-right" aria-hidden="true"></i></button></div></div></div></div></section>
+    <section class="section hero is-light" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" type="button" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy" aria-hidden="true"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@misc{sunlightrobustparkour2026,
+  title={DAWN++: Sunlight-Robust Quadruped Parkour via Adaptive Depth-Corruption Training of World Models},
+  author={Anonymous Author(s)},
+  year={2026}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container is-max-desktop content">
+      <p>Page template adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">Academic Project Page Template</a> and <a href="https://nerfies.github.io" target="_blank" rel="noopener noreferrer">Nerfies</a>. Website template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
